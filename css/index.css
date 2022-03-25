@@ -1,0 +1,148 @@
+@font-face {
+    font-family: 'Overpass';
+    src: url('https://fonts.google.com/specimen/Overpass');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+body{
+    background: hsl(216, 12%, 8%);
+   font-family: 'Overpass', sans-serif;
+}
+
+.rating-state,.thank-you-state{
+    width: 400px;
+    height: auto;
+    background: hsl(213, 19%, 18%);
+    border-radius: 30px;
+    margin: auto ;
+    margin-top: 100px;
+    padding: 30px;
+
+}
+.rate-star{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: hsl(213, 18%, 26%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.rate-star img{
+    width: 40%;
+    height: 40%;
+}
+.rating-quest{
+    margin-top: 25px;
+}
+.rating-quest h2{
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+}
+.rating-quest p{
+    color: hsl(217, 12%, 63%);
+    font-size: 15px;
+    margin-top: 15px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.ratings{
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+.ratings ul{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.ratings ul li{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: hsl(213, 18%, 26%);
+    justify-content: center;
+    align-items: center;
+    color: hsl(217, 12%, 63%);
+    font-weight: 700;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.ratings ul li:nth-last-child(2):hover{
+    background:hsl(217, 12%, 63%) !important;
+    color: hsl(0, 0%, 100%) !important;
+}
+.ratings ul li:last-child:hover{
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+}
+
+.submit-rating button{
+    width: 100%;
+    height: 45px;
+    background:hsl(25, 97%, 53%);
+    border-radius: 30px;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    margin-top: 20px;
+    transition: .3s ease-in-out;
+}
+.submit-rating button:hover{
+    background: white;
+    color:hsl(25, 97%, 53%);
+}
+
+.thank-you-state{
+    padding-top: 30px;
+    display: none;
+}
+.thank-you-state .thank-you-img{
+    margin: 20px auto;
+    text-align: center;
+    height: 120%;
+}
+.rate-info{
+    width: max-content;
+    padding: 8px 30px;
+    background-color:hsl(210, 14%, 23%);;
+    margin: 30px auto;
+    border-radius: 20px;
+    color:hsl(25, 97%, 53%) ;
+}
+.thank-you-msg{
+    color: white;
+    text-align: center;
+    justify-content: center;
+}
+.thank-you-msg h3{
+    font-weight: 700;
+    font-size: x-large;
+    margin-bottom: 10px;
+}
+.thank-you-msg p {
+    line-height: 30px;
+    font-size: 15px;
+    color:  hsl(217, 12%, 63%);
+    font-weight: 400;
+}
+
+@media screen and (max-width:375px) {
+    .rating-state,.thank-you-state{
+        width: 94%;
+    }
+    .thank-you-msg p{
+        font-size: 14px;
+    }
+}

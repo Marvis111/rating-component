@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/index.css">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <!-- Rating state start -->
+
+  <div class="rating-state" id="rating-state">
+    <div class="rate-star">
+      <img src="/images/icon-star.svg" alt="Icon-star" />
+    </div>
+    <div class="rating-quest">
+      <h2>How did we do?</h2>
+      <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+    </div>
+    <div class="ratings">
+      <ul class="rating-list">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li class="fifth-rating">5</li>
+      </ul>
+    </div>
+    <div class="submit-rating">
+      <button type="button" onclick="submitRating()" >Submit</button>
+    </div>
+  </div>
+  <!-- Rating state end -->
+
+  <!-- Thank you state start -->
+  <div class="thank-you-state" id="thank-you-state">
+      <div class="thank-you-img">
+        <img src="./images/illustration-thank-you.svg" alt="Thank you">
+      </div>
+      <div class="rate-info">
+      <h3 style="font-weight: 400;">  You selected <span id="selected-rate"></span> out of 5</h3>
+      </div>
+      <div class="thank-you-msg">
+        <h3>Thank you!</h3>
+        <p>We appreciate you for giving your time to give a rating.
+           If you ever need any support, don't hesitate to get in touch!</p>
+      </div>
+  </div>
+  <!-- Thank you state end -->
+
+  
+  <div class="attribution" style="color: white;margin-top: 10px;">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.github.com/Marvis111" >Oyegbile Marvellous</a>.
+  </div>
+  <script src="./js/index.js"></script>
+</body>
+</html>
